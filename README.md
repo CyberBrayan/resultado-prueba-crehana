@@ -75,25 +75,25 @@ py manage.py makemigrations
 py manage.py migrate
 ```
 
-### 7. We create a super user
+### 7. Create super user
 
 ```
 py manage.py createsuperuser --email admin@example.com --username admin
 ```
 
-### 8. We upload information
+### 8. Load data
 
 ```
 py manage.py loaddata load_data.json
 ```
 
-### 8. We execute the project
+### 8. Start project
 
 ```
 py manage.py runserver
 ```
 
-### 9. We initialize celery. We locate ourselves in the project folder and initialize the virtual environment, then execute the following command
+### 9. Start celery. We locate ourselves in the project folder and initialize the virtual environment, then execute the following command
 
 ```
 celery -A crehana worker -l info -P gevent
