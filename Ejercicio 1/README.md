@@ -5,7 +5,7 @@
 
 ## Script Execution
 
-#### 1. Download file ejercicio 1.py
+#### 1. Download file ejercicio1.py
 
 #### 2. Run script and observe results
 
