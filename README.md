@@ -127,4 +127,4 @@ Visit [http://localhost:8000/admin/](http://localhost:8000/admin/). You should s
 
 ## Authors
 
-* **Brayan Calcina Aguilar** - *Initial work*
+* **Brayan Calcina Aguilar**
