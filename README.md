@@ -104,9 +104,11 @@ Visit [http://localhost:8000/admin/](http://localhost:8000/admin/). You should s
 
 ## Tests
 
-### 1. To perform a test we need to open Post Man and place the following url: http://localhost:8000/create_event/
+### 1. Security: Configure postman to perform the query with basic authentication. Put the credentials of the super user
 
-### 2. Select the POST method and send the following JSON
+### 2. To perform a test we need to open Post Man and place the following url: http://localhost:8000/create_event/
+
+### 3. Select the POST method and send the following JSON
 
 ```
 {
