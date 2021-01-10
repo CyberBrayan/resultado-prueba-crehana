@@ -1,0 +1,211 @@
+[
+    {
+        "model": "curso.Category",
+        "pk": 1,
+        "fields":{
+            "name": "Marketing Digital"
+        }
+    },
+    {
+        "model": "curso.Category",
+        "pk": 2,
+        "fields":{
+            "name": "Negocios"
+        }
+    },
+    {
+        "model": "curso.Category",
+        "pk": 3,
+        "fields":{
+            "name": "Ilustración y Dibujo"
+        }
+    },
+    {
+        "model": "curso.Category",
+        "pk": 4,
+        "fields":{
+            "name": "Video"
+        }
+    },
+    {
+        "model": "curso.Category",
+        "pk": 5,
+        "fields":{
+            "name": "Diseño"
+        }
+    },
+    {
+        "model": "curso.Category",
+        "pk": 6,
+        "fields":{
+            "name": "Fotografía"
+        }
+    },
+    {
+        "model": "curso.Category",
+        "pk": 7,
+        "fields":{
+            "name": "Web"
+        }
+    },
+    {
+        "model": "curso.Category",
+        "pk": 8,
+        "fields":{
+            "name": "Animación & 3D"
+        }
+    },
+    {
+        "model": "curso.Category",
+        "pk": 9,
+        "fields":{
+            "name": "Arquitectura digital"
+        }
+    },
+    {
+        "model": "curso.Category",
+        "pk": 10,
+        "fields":{
+            "name": "Manualidades"
+        }
+    },
+    {
+        "model": "curso.Category",
+        "pk": 11,
+        "fields":{
+            "name": "Música"
+        }
+    },
+    {
+        "model": "curso.Course",
+        "pk": 1,
+        "fields":{
+            "title": "Fundamentos de JavaScript",
+            "category": 7
+        }
+    },
+    {
+        "model": "curso.Course",
+        "pk": 2,
+        "fields":{
+            "title": "Introducción al Desarrollo Web front end: HTML y CSS desde cero",
+            "category": 7
+        }
+    },
+    {
+        "model": "curso.Course",
+        "pk": 3,
+        "fields":{
+            "title": "Bootstrap desde cero: Construye sitios web responsive",
+            "category": 7
+        }
+    },
+    {
+        "model": "curso.Course",
+        "pk": 4,
+        "fields":{
+            "title": "Maquetación de sitios web dinámicos con Javascript y jQuery desde cero",
+            "category": 7
+        }
+    },
+    {
+        "model": "curso.Course",
+        "pk": 5,
+        "fields":{
+            "title": "Git y GitHub: Control de versiones en Proyectos Web",
+            "category": 7
+        }
+    },
+    {
+        "model": "curso.Course",
+        "pk": 6,
+        "fields":{
+            "title": "TypeScript desde cero",
+            "category": 7
+        }
+    },
+    {
+        "model": "gestion.Inscription",
+        "pk": 1,
+        "fields":{
+            "user": 1,
+            "course": 1
+        }
+    },
+    {
+        "model": "gestion.Inscription",
+        "pk": 2,
+        "fields":{
+            "user": 1,
+            "course": 2
+        }
+    },
+    {
+        "model": "gestion.Inscription",
+        "pk": 3,
+        "fields":{
+            "user": 1,
+            "course": 3
+        }
+    },
+    {
+        "model": "gestion.Inscription",
+        "pk": 4,
+        "fields":{
+            "user": 1,
+            "course": 4
+        }
+    },
+    {
+        "model": "gestion.Inscription",
+        "pk": 5,
+        "fields":{
+            "user": 1,
+            "course": 5
+        }
+    },
+    {
+        "model": "gestion.Inscription",
+        "pk": 6,
+        "fields":{
+            "user": 1,
+            "course": 6
+        }
+    },
+    {
+        "model": "gestion.VideoProgress",
+        "pk": 1,
+        "fields":{
+            "minute_r_d": 10,
+            "inscription": 4,
+            "day": "2021-01-09"
+        }
+    },
+    {
+        "model": "gestion.VideoProgress",
+        "pk": 2,
+        "fields":{
+            "minute_r_d": 15,
+            "inscription": 3,
+            "day": "2021-01-09"
+        }
+    },
+    {
+        "model": "gestion.VideoProgress",
+        "pk": 3,
+        "fields":{
+            "minute_r_d": 37,
+            "inscription": 6,
+            "day": "2021-01-09"
+        }
+    },
+    {
+        "model": "gestion.VideoProgress",
+        "pk": 4,
+        "fields":{
+            "minute_r_d": 51,
+            "inscription": 1,
+            "day": "2021-01-09"
+        }
+    }
+]
