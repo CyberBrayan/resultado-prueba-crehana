@@ -35,8 +35,8 @@ redis-server.exe
 #### 1. Create the project directory
 
 ```
-mkdir tutorial
-cd tutorial
+mkdir prueba-crehana
+cd prueba-crehana
 ```
 
 ### 2. Clone the project in the created directory
