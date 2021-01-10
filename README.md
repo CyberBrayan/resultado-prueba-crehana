@@ -1,6 +1,6 @@
-# Resolución de prueba crehana
+# Crehana test resolution
 
-El proyecto utiliza las siguientes tecnologías:
+The project uses the following technologies:
 + Django 3.1.5
 + Djangorestframework 3.12.2
 + Celery 5.0.5
@@ -8,13 +8,13 @@ El proyecto utiliza las siguientes tecnologías:
 + gevent 20.12.1
 + redis 3.5.3
 
-## Requerimientos del sistema
+## System requirements
 
 + [Git](https://git-scm.com/)
 + [Redis](https://github.com/microsoftarchive/redis/releases)
 + [Python 3.8.3](https://www.python.org/downloads/release/python-383/)
 
-# Configurar entorno local
+# Configure locale
 
 ## Start REDIS
 
