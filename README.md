@@ -11,9 +11,26 @@ El proyecto utiliza las siguientes tecnologías:
 ## Requerimientos del sistema
 
 + [Git](https://git-scm.com/)
++ [Redis](https://github.com/microsoftarchive/redis/releases)
 + [Python 3.8.3](https://www.python.org/downloads/release/python-383/)
 
-## Configurar entorno local
+# Configurar entorno local
+
+## Start REDIS
+
+### 1. Download REDIS .zip
+
+```
+https://github.com/microsoftarchive/redis/releases
+```
+
+### 2. Locate the zip file in C and extract and execute the file
+
+```
+redis-server.exe
+```
+
+## Configure Django project
 
 #### 1. Create the project directory
 
@@ -76,9 +93,28 @@ py manage.py loaddata load_data.json
 py manage.py runserver
 ```
 
+### 9. We initialize celery. We locate ourselves in the project folder and initialize the virtual environment, then execute the following command
+
+```
+celery -A crehana worker -l info -P gevent
+```
 
 Visit [http://localhost/admin](http://localhost/admin). You should see admin django ;)
 
+
+## Tests
+
+### 1. To perform a test we need to open Post Man and place the following url: http://localhost:8000/create_event/
+
+### 2. Select the POST method and send the following JSON
+
+```
+{
+    "event_type": 3,
+    "minute": 12,
+    "inscription": 4
+}
+```
 
 ## Languages used
 + [Python](https://www.python.org/)
