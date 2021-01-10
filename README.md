@@ -99,7 +99,7 @@ py manage.py runserver
 celery -A crehana worker -l info -P gevent
 ```
 
-Visit [http://localhost/admin](http://localhost/admin). You should see admin django ;)
+Visit [http://localhost:8000/admin/](http://localhost:8000/admin/). You should see admin django ;)
 
 
 ## Tests
