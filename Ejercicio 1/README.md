@@ -11,5 +11,5 @@
 
 ## Authors
 
-* **Brayan Calcina Aguilar** - *Initial work*
+* **Brayan Calcina Aguilar**
 
