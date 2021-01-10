@@ -1,44 +1,81 @@
-# Example Project for a Dockerized Django REST, Gunicorn and Nginx in Development
+# Resolución de prueba crehana
 
-This is a small contribution for the community in order to facilitate the development of applications.
+El proyecto utiliza las siguientes tecnologías:
++ Django 3.1.5
++ Djangorestframework 3.12.2
++ Celery 5.0.5
++ django-celery-results 2.0.0
++ gevent 20.12.1
++ redis 3.5.3
 
-This is an example of a project that uses the following technologies:
-+ Django REST APIs
-+ Docker with Docker Compose
-
-
-## System Requirements
+## Requerimientos del sistema
 
 + [Git](https://git-scm.com/)
-+ [Docker](https://www.docker.com/)
-+ [PostgreSQL](http://www.postgresql.org/)
-+ [Docker Compose](https://docs.docker.com/compose/)
++ [Python 3.8.3](https://www.python.org/downloads/release/python-383/)
 
+## Configurar entorno local
 
-## Setup Local Environment
-### First things, first. Clone the repo
+#### 1. Create the project directory
 
 ```
-git clone https://github.com/RobertArzolaC/base_django.git
+mkdir tutorial
+cd tutorial
 ```
 
-
-### To setup a Dockerized development environment
-
-In my opinion, this is the easiest way to get up and running.
-
-
-#### 1. Create `.env` file
-
-[Example .env file](https://docs.google.com/document/d/1tdUjDeGbmv6caLwLjt6ctVBVBOO-ZcTnEsHvMWM_rz0/edit?usp=sharing)
-
-
-#### 2. Build docker container
+### 2. Clone the project in the created directory
 
 ```
-make docker-build-dev
-make docker-up-dev
+git clone https://github.com/CyberBrayan/resultado-prueba-crehana/tree/master.git
 ```
+
+#### 3. Create a virtual environment to isolate our package dependencies locally
+
+```
+py -m venv env
+```
+
+### 4. Initialize the virtual environment
+
+```
+env\Scripts\activate
+```
+
+### 5. Install dependencies
+
+```
+pip install -r requeriments.txt
+```
+
+### 5. Prepare for data migration
+
+```
+py manage.py makemigrations
+```
+
+### 6. Migrate data
+
+```
+py manage.py migrate
+```
+
+### 7. We create a super user
+
+```
+py manage.py createsuperuser --email admin@example.com --username admin
+```
+
+### 8. We upload information
+
+```
+py manage.py loaddata load_data.json
+```
+
+### 8. We execute the project
+
+```
+py manage.py runserver
+```
+
 
 Visit [http://localhost/admin](http://localhost/admin). You should see admin django ;)
 
